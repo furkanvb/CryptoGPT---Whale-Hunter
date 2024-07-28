@@ -1,5 +1,4 @@
-![alt text](https://i.hizliresim.com/465vigu.png)
-
+[![alt text](https://i.hizliresim.com/465vigu.png)
 
 
 ENG:
