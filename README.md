@@ -1,4 +1,4 @@
-[![alt text](https://i.hizliresim.com/3rixrro.png)
+![alt text](https://i.hizliresim.com/3rixrro.png)
 
 
 ENG:
