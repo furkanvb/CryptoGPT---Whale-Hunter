@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img width="250" height="250" src="https://i.hizliresim.com/3rixrro.png">
+  <img width="576" height="217" src="https://i.hizliresim.com/2sq61at.png">
 </p>
 ENG:
 A crypto bot that provides whale trading information through a simple rsi and by evaluating the trades that have occurred in 1 day over 10 minute intervals
