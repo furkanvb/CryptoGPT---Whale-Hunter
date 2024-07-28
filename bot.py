@@ -4,18 +4,6 @@ from datetime import datetime
 import database
 from telegram import sendtelegram
 
-
-def test():
-    data = getcoindata("WLDUSDT","1m",1440)
-    datacount = data.shape[0] - 1
-    t = 0.0
-    for i in range(10):
-        p = data_utils.getvolpercent(data['Open'][datacount - i],data['Open'][datacount - i] - data['Close'][datacount - i]) * -1
-        t += p
-        print(t)
-
-test()
-
 def startbot(coinname):
     data = getcoindata(coinname,"1m",1440)
     rsi = data_utils.getrsi(data,7)
