@@ -1,8 +1,5 @@
 <p align="center">
   <img width="744" height="268" src="https://i.hizliresim.com/214r9bl.jpg">
-</p>
-
-<p align="center">
   <img width="576" height="217" src="https://i.hizliresim.com/2sq61at.png">
 </p>
 ENG:
