@@ -1,3 +1,6 @@
+![alt text](https://i.hizliresim.com/465vigu.png)
+
+
 
 ENG:
 A crypto bot that provides whale trading information through a simple rsi and by evaluating the trades that have occurred in 1 day over 10 minute intervals
