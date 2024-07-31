@@ -15,5 +15,5 @@ Kullanmak isterseniz telegram.py adlı dosyadaki token kısımlarını tokenleri
 si ile doldurmanız yeterlidir.
 
 using:
-	$ pip install -r requirements.txt
-	python3 main.py
+$ pip install -r requirements.txt
+$ python3 main.py
