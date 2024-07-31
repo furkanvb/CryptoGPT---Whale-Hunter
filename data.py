@@ -3,13 +3,13 @@ from ccxt import binanceusdm
 import requests
 import json
 
-def getcoindata(coinname,time,limit):
+def getcoindata(coinname, time, limit):
     try:
         binance = binanceusdm()
-        data = binance.fetch_ohlcv(coinname,time,limit=limit)
+        data = binance.fetch_ohlcv(coinname, time, limit=limit)
     except Exception as exp:
         print(f"Coinname:{coinname} {exp}")
-    pddata = pd.DataFrame(data=data,columns=("Time","Open","High","Low","Close","Volume"))
+    pddata = pd.DataFrame(data=data,columns=("Time", "Open", "High", "Low", "Close", "Volume"))
     return pddata
     
 def getcoinlist(savename):

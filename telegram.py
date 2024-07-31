@@ -19,8 +19,30 @@ def set_critical(percent):
 		critical = "🔥"
 	return (critical)
 
-def sendtelegram(coinname,lastvol,percent,price,t_vol,count,signaltype):
-	i = random.randint(1,4)
+def set_message(coinname, lastvol, percent, price, t_vol, count, signaltype, critical):
+	if (signaltype == 'long'):
+		message = f"""
+	🟢 CryptoGPT - LONG 🟢
+	💎 Coin: #{coinname} {critical}
+	💰 Volume: {lastvol}$ (%{percent})
+	💲 Price: {price}$
+	💵 T-Long: {t_vol}$ 
+	🎚 Count: {count}. Long
+	"""
+	elif (signaltype == 'short'):
+			message = f"""
+	🔴 CryptoGPT - SHORT 🔴
+	💎 Coin: #{coinname} {critical}
+	💰 Volume: {lastvol}$ (%{percent})
+	💲 Price: {price}$
+	💵 T-Short: {t_vol}$ 
+	🎚 Count: {count}. Short
+	"""
+	return (message)
+
+def sendtelegram(coinname, lastvol, percent, price, t_vol, count, signaltype):
+	i = random.randint(1,5)
+
 	if (i == 1):
 		token = "BOT1TOKEN"
 	elif (i == 2):
@@ -31,25 +53,9 @@ def sendtelegram(coinname,lastvol,percent,price,t_vol,count,signaltype):
 		token = "BOT4TOKEN"
 	elif (i == 5):
 		token = "BOT5TOKEN"
+
 	critical = set_critical(percent)
-	if (signaltype == 'long'):
-		message = f"""
-🟢 CryptoGPT - LONG 🟢
-💎 Coin: #{coinname} {critical}
-💰 Volume: {lastvol}$ (%{percent})
-💲 Price: {price}$
-💵 T-Long: {t_vol}$ 
-🎚 Count: {count}. Long
-"""
-	elif (signaltype == 'short'):
-		message = f"""
-🔴 CryptoGPT - SHORT 🔴
-💎 Coin: #{coinname} {critical}
-💰 Volume: {lastvol}$ (%{percent})
-💲 Price: {price}$
-💵 T-Short: {t_vol}$ 
-🎚 Count: {count}. Short
-"""
+	message = set_message(coinname, lastvol, percent, price, t_vol, count, signaltype, critical)
 	tel = telebot.TeleBot(token,parse_mode='html')
 	tel.send_message("-1002140413453",message)
 	sendtelegramplus(percent,message)

@@ -11,7 +11,7 @@ def getdatabasetime(coinname):
 
 
 
-def updatedatabasetime(coinname,newtime):
+def updatedatabasetime(coinname, newtime):
     data = sqlite3.connect("db/database.db")
     cursor = data.cursor()
     cursor.execute(f"UPDATE coins SET lastwar = {newtime} WHERE coinname = '{coinname}';")
@@ -35,7 +35,7 @@ def getsignaltype(coinname):
     data.close()
     return a[0]
 
-def updatesignaltype(coinname,newtype):
+def updatesignaltype(coinname, newtype):
     data = sqlite3.connect("db/database.db")
     cursor = data.cursor()
     cursor.execute(f"UPDATE coins SET signaltype = '{newtype}' WHERE coinname = '{coinname}';")
@@ -43,7 +43,7 @@ def updatesignaltype(coinname,newtype):
     cursor.close()
     data.close()
 
-def updatesignalcount(coinname,newcount):
+def updatesignalcount(coinname, newcount):
     data = sqlite3.connect("db/database.db")
     cursor = data.cursor()
     cursor.execute(f"UPDATE coins SET signalcount = {newcount} WHERE coinname = '{coinname}';")
@@ -60,7 +60,7 @@ def getlastvol(coinname):
     data.close()
     return int(a[0])
 
-def updatelastvol(coinname,newvol):
+def updatelastvol(coinname, newvol):
     data = sqlite3.connect("db/database.db")
     cursor = data.cursor()
     cursor.execute(f"UPDATE coins SET lastvol = {newvol} WHERE coinname = '{coinname}';")
