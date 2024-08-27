@@ -10,7 +10,7 @@
 
 ## Crypto Whale Hunter
 <p align="center">
-  <img width="576" height="217" src="https://i.hizliresim.com/go63y54.png">
+  <img width="600" height="250" src="https://i.hizliresim.com/go63y54.png">
 </p>
 
 ## About
