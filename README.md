@@ -25,7 +25,7 @@ telegram üzerinden ileten balina avcısı programı
 Kullanmak isterseniz telegram.py adlı dosyadaki token kısımlarını tokenlerinizle chatid kısımlarınıda sinyali ileticeğiniz (kanal, grup veya sohbetin) id
 si ile doldurmanız yeterlidir.
 
-using:
+## using:
 ```
 $ pip install -r requirements.txt
 $ python3 main.py
