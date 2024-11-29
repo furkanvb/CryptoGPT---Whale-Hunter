@@ -57,5 +57,5 @@ def sendtelegram(coinname, lastvol, percent, price, t_vol, count, signaltype):
 	critical = set_critical(percent)
 	message = set_message(coinname, lastvol, percent, price, t_vol, count, signaltype, critical)
 	tel = telebot.TeleBot(token,parse_mode='html')
-	tel.send_message("-1002140413453",message)
+	tel.send_message("chatid",message)
 	sendtelegramplus(percent,message)
